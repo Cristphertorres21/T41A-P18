@@ -34,15 +34,4 @@ def test_jerarquia_ana(conn):
             SELECT COUNT(*) FROM jerarquia;
         """)
         count = cur.fetchone()[0]
-        assert count == 5  # Ana, Luis, Marta, Pedro, Sofía
-✅ Estructura esperada del repo
-pgsql
-Copiar código
-.github/
-└── workflows/
-    └── postgresql_nosql.yml
-01_create_tables.sql
-02_insert_data.sql
-03_query_data.sql
-requirements.txt
-test_queries.py
+        assert count == 5 
